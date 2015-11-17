@@ -1,0 +1,120 @@
+.center {
+  margin: auto;
+  width: 85%;
+  background-color: rgb(246, 246, 239);
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+nav {
+  background-color: rgb(255, 102, 1);
+  padding: 2px;
+}
+
+.logo {
+  float: left;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.title {
+  float: left;
+  padding: 2px 7.1px 2px 4px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 10pt;
+  color: #000000;
+  font-weight: bold;
+}
+
+.nav-items{
+  float: left;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 10pt;
+  padding: 2px 4px 2px 2px;
+}
+
+.login {
+  text-align: right;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 10pt;
+  padding: 2px 4px 2px 2px;
+}
+
+.paragraph {
+  padding: 9px 0px 0px 8px;
+}
+
+.rank {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 10pt;
+  color: #828282;
+  float: left;
+  margin-right: 3px;
+  padding-top: 1px;
+}
+
+.arrow {
+  float: left;
+  margin-right: 3px;
+}
+
+.article {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 10pt;
+  float: left;
+  margin-right: 4px;
+  padding-top: 1px;
+}
+
+.url {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 8pt;
+  color: #828282;
+  float: left;
+  margin-right: 4px;
+  padding-top: 2px;
+}
+
+.subtext {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 7pt;
+  color: #828282;
+  clear: both;
+  margin-left: 40px;
+}
+
+.description {
+  float: left;
+  margin-right: 4px;
+}
+
+.user {
+  float: left;
+  margin-right: 4px;
+}
+
+.time {
+  float: left;
+  margin-right: 4px;
+}
+
+.comments {
+  float: left;
+  margin-right: 4px;
+}
+
+.clear
+{
+  clear: both;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Slacker News</title>
+
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+
+
+
+  <body>
+    <div class="center">
+      <nav class="clearfix">
+        <img class="logo" src="https://news.ycombinator.com/y18.gif">
+        <div class="title">
+          Hacker News
+        </div>
+        <div class="nav-items">
+          <a href="/articles/new">new</a>
+        </div>
+        <div class="login">
+          login
+        </div>
+      </nav>
+
+<form action="/articles/new" method="post">
+  <label for="article">New Article:</label>
+  <input type="text" id="article" name="article"><br>
+  
+  <label for="url">URL:</label>
+  <input type="text" id="url" name="url"><br>
+
+  <label for="description">Description:</label>
+  <input type="text" id="description" name="description">
+  <input type="submit">
+</form>
+
+</body>

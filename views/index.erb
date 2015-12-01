@@ -1,55 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Slacker News</title>
+<head>
+  <title>List of Articles</title>
+</head>
+<body>
+  <h2>List of Articles</h2>
+    <ul>
+      <% @articles.each do |article| %>
+        <h2><%= article[0] %></h2>
+        <a href="<%=article[1]%>"><%=article[1]%></a>
+        <p><%= article[2] %></p>
+      <% end %>
+    </ul>
 
-    <link rel="stylesheet" href="/styles.css">
-  </head>
-
-  <body>
-    <div class="center">
-
-      <nav class="clearfix">
-        <img class="logo" src="https://news.ycombinator.com/y18.gif">
-        <div class="title">
-          Hacker News
-        </div>
-        <div class="nav-items">
-          <a href="/articles/new">new</a>
-        </div>
-        <div class="login">
-          login
-        </div>
-      </nav>
-
-    <% @arr_of_arrs.each_with_index do |articles, index| %>
-      <div class="paragraph">
-        <div class="rank">
-          <% number = index + 1 %>
-          <%=number.to_s%>
-        </div>
-        <div class="arrow">
-        <img class="vote" src="https://news.ycombinator.com/grayarrow2x.gif" width="10px">
-        </div>
-
-        <div class="article">
-          <%=articles[0]%>
-        </div>
-        <div class="url">
-          <%=articles[1]%>
-        </div>
-      </div>
-
-      <div class="subtext">
-          <div class="description">
-            <%=articles[2]%>
-          </div>
-      </div>
-      <div class="clear"></div>
-    <% end %>
-      
-
-    </div>
+    <a href="/articles/new">Post a new article</a>
   </body>
 </html>
